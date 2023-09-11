@@ -1,0 +1,20 @@
+<h2>Por capital</h2>
+<hr>
+
+<div class="roow">
+  <div class="col">
+    <!-- Search box -->
+    <shared-search-box
+      (onValue)="searchByCapital($event)"
+      placeholder="Buscar por capital"></shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <!-- a traves del input declarado en el componente podemos mandar el objeto,
+    countries ya esta en el contexto (swl componente)-->
+    <country-table [countries]="countries"></country-table>
+  </div>
+</div>
